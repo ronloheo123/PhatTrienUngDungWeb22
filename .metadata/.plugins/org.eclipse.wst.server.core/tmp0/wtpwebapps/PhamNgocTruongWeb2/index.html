@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>E-Learning Nha Trang University</title>
+    <link rel="shortcut icon" href="https://elearning.ntu.edu.vn/theme/image.php/academi/theme/1674784913/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, E-Learning Nha Trang University" />
+<link rel="stylesheet" type="text/css" href="https://elearning.ntu.edu.vn/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://elearning.ntu.edu.vn/theme/styles.php/academi/1674784913_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/elearning.ntu.edu.vn","sesskey":"pn95KwHRcN","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1674784913","slasharguments":1,"theme":"academi","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1674784913","admin":"admin","svgicons":true,"usertimezone":"Asia\/Ho_Chi_Minh","contextid":2,"langrev":1674784913,"templaterev":"1674784913"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/elearning.ntu.edu.vn\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/elearning.ntu.edu.vn\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/elearning.ntu.edu.vn\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/elearning.ntu.edu.vn\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/elearning.ntu.edu.vn\/theme\/yui_combo.php?m\/1674784913\/","combine":true,"comboBase":"https:\/\/elearning.ntu.edu.vn\/theme\/yui_combo.php?","ext":false,"root":"m\/1674784913\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/elearning.ntu.edu.vn\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/elearning.ntu.edu.vn\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1674784913\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/elearning.ntu.edu.vn\/lib\/javascript.php\/1674784913\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/elearning.ntu.edu.vn\/lib\/javascript.php\/1674784913\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-site-index" class="format-site course path-site chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam elearning-ntu-edu-vn pagelayout-frontpage course-1 context-2 notloggedin ">
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/lib/polyfills/polyfill.js"></script>
+<script src="https://elearning.ntu.edu.vn/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://elearning.ntu.edu.vn/theme/jquery.php/core/jquery-3.5.1.min.js"></script>
+<script src="https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<nav  id="header" class="fixed-top navbar navbar-light bg-faded navbar-static-top navbar-expand moodle-has-zindex">
+
+     <div class="container navbar-nav">
+
+
+        <div data-region="drawer-toggle" class="d-inline-block mr-3">
+            <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  ></i><span class="sr-only">Side panel</span>
+            <span aria-hidden="true"> </span>
+            <span aria-hidden="true"> </span>
+            <span aria-hidden="true"> </span>
+
+            </button>
+
+            <nav class="nav navbar-nav hidden-md-down address-head">
+                    <span><i class="fa fa-phone"></i>Call us : 0258 2461303</span>
+                    <span><i class="fa fa-envelope-o"></i>E-mail : <a href="mailto:tocntt@ntu.edu.vn">tocntt@ntu.edu.vn</a></span>
+            </nav>
+
+        </div>
+
+
+
+        <ul class="nav navbar-nav ml-auto">
+            <div class="d-none d-lg-block">
+                
+            </div>
+            <!-- navbar_plugin_output -->
+            <li class="nav-item">
+                
+            </li>
+            <!-- user_menu -->
+            <li class="nav-item d-flex align-items-center">
+                <div class="usermenu"><span class="login">You are not logged in. (<a href="https://elearning.ntu.edu.vn/login/index.php">Log in</a>)</span></div>
+            </li>
+        </ul>
+        <!-- search_box -->
+
+
+    </div>
+</nav>
+
+
+<div class="header-main">
+    <div class="container">
+    	<nav class="navbar navbar-light bg-faded">
+            <a href="https://elearning.ntu.edu.vn/?redirect=0" class="navbar-brand has-logo
+                ">
+                <span class="logo">
+                    <img src="//elearning.ntu.edu.vn/pluginfile.php/1/theme_academi/logo/1674784913/eLogo4.png" alt="e-NTU">
+                </span>
+            </a>
+
+        	<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+        	<div class="collapse navbar-toggleable-md" id="navbarResponsive">
+
+                <div class="infoarea ">
+
+                    <!-- custom_menu -->
+                    <li class="nav-item">
+    <a class="nav-item nav-link" href="https://elearning.ntu.edu.vn" >Trang chủ</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="https://elearning.ntu.edu.vn/course" >Khóa học</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="https://elearning.ntu.edu.vn/my" >Trang cá nhân</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="https://elearning.ntu.edu.vn/course/view.php?id=1204" >Hướng dẫn</a>
+</li><li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-63e995408111663e995407ed218" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Language" aria-controls="drop-down-menu-63e995408111663e995407ed218">
+        English ‎(en)‎
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63e995408111663e995407ed218" aria-labelledby="drop-down-63e995408111663e995407ed218">
+                <a class="dropdown-item" role="menuitem" href="https://elearning.ntu.edu.vn/?lang=en"  >English ‎(en)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://elearning.ntu.edu.vn/?lang=vi"  lang="vi" >Vietnamese ‎(vi)‎</a>
+    </div>
+</li>
+                    <!-- page_heading_menu -->
+                    
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    
+</div><!--=========== Slideshow section start here ===========-->
+<div>
+<br/><br/></div>
+<!--=========== Slideshow section start here ===========-->
+<!--Slider-->
+
+<!-- Main Moodle Main Contents -->
+<div id="page" class="container">
+
+    <header id="page-header" class="clearfix">
+        <a title="Home" class="logo" href="https://elearning.ntu.edu.vn"></a>        <div id="page-navbar" class="clearfix">
+            <nav class="breadcrumb-nav"><nav aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://elearning.ntu.edu.vn/" aria-current="page" >Home</a>
+                </li>
+        </ol>
+</nav></nav>
+            <div class="breadcrumb-button"></div>
+        </div>
+        <div id="course-header">
+                    </div>
+    </header>
+    <div id="page-content" class="row">
+
+    
+    <div id="region-bs-main-and-pre" class="col-md-9">
+        <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><div class="box py-3 generalbox sitetopic"><div class="no-overflow"><h4><img src="https://ntu.edu.vn/uploads/6/files/trinh-dien-anh/cmnm.jpg" alt="thi giua ky" width="1556" height="469" class="img-fluid atto_image_button_text-bottom"><br></h4>
+<h4><strong style="color: rgb(73, 80, 87); font-size: 0.9375rem; text-align: center;">Hướng dẫn Giảng viên về các hoạt động dạy học và đánh giá&nbsp;<a href="https://elearning.ntu.edu.vn/course/view.php?id=4218#section-0">tại đây</a></strong></h4></div><ul class="section img-text"><li class="activity label modtype_label  " id="module-10223361"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="contentwithoutlink "><div class="no-overflow"><div class="no-overflow"><p dir="ltr" style="text-align: left;"><span><span class="" style="color: rgb(239, 69, 64);"><strong>TÀI LIỆU HƯỚNG DẪN DẠY-HỌC SỬ DỤNG E-LEARNING&nbsp;</strong></span></span><br></p><p dir="ltr" style="text-align: left;"><span><span class="" style="color: rgb(239, 69, 64);"><span><span class="" style="color: rgb(51, 51, 51);">Hướng dẫn sinh viên sử dụng các ứng dụng CNTT Trường Đại học Nha Trang:<span class="" style="color: rgb(239, 69, 64);">&nbsp;</span></span><a href="https://elearning.ntu.edu.vn/course/view.php?id=12779" style=""><span class="" style="color: rgb(239, 69, 64);">xem tại đây</span></a><span class="" style="color: rgb(239, 69, 64);">&nbsp;</span><br></span></span></span></p></div></div></div></div></div></div></li><li class="activity resource modtype_resource  " id="module-10223384"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/resource/view.php?id=10223384"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/core/1674784913/f/pdf-24" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Hướng dẫn triển khai đánh giá tự luận và trắc nghiệm trên NTU E-learning<span class="accesshide " > File</span></span></a></div></div></div></div></li><li class="activity resource modtype_resource  " id="module-10223385"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/resource/view.php?id=10223385"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/core/1674784913/f/pdf-24" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Tài liệu hướng dẫn sử dụng NTU E-learning cơ bản<span class="accesshide " > File</span></span></a></div></div></div></div></li><li class="activity resource modtype_resource  " id="module-10223386"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/resource/view.php?id=10223386"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/core/1674784913/f/pdf-24" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Tài liệu hướng dẫn đưa tập tin video lên YouTube và chia sẻ video.<span class="accesshide " > File</span></span></a></div></div></div></div></li><li class="activity resource modtype_resource  " id="module-10223387"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/resource/view.php?id=10223387"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/core/1674784913/f/pdf-24" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Hướng dẫn sử dụng Google Drive trong việc lưu trữ tài liệu học tập<span class="accesshide " > File</span></span></a></div></div></div></div></li><li class="activity resource modtype_resource  " id="module-10223388"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/resource/view.php?id=10223388"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/core/1674784913/f/powerpoint-24" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Hướng dẫn sử dụng Google Meet dành cho giảng viên<span class="accesshide " > File</span></span></a></div></div></div></div></li><li class="activity resource modtype_resource  " id="module-10223389"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/resource/view.php?id=10223389"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/core/1674784913/f/pdf-24" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Hướng dẫn sử dụng Google Meet dành cho sinh viên<span class="accesshide " > File</span></span></a></div></div></div></div></li><li class="activity feedback modtype_feedback  " id="module-10223390"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/feedback/view.php?id=10223390"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/feedback/1674784913/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">HỘP THƯ  NHẬN XÉT, GÓP Ý VỀ DẠY HỌC<span class="accesshide " > Feedback</span></span></a></div><div class="contentafterlink"><div class="no-overflow"><div class="no-overflow"><p dir="ltr" style="text-align: left;"><span class="" style="color: rgb(239, 69, 64);"><strong>Thân gửi các em Sinh viên NTU,</strong></span></p><p dir="ltr" style="text-align: left;">Để có thêm cơ sở trong việc cải tiến chất lượng dạy và học, Nhà Trường tạo <strong><span class="" style="color: rgb(239, 69, 64);">Hộp thư </span></strong>để các em thuận tiện nhận xét và đóng góp ý kiến về các <strong><span class="" style="color: rgb(239, 69, 64);">hoạt động dạy-học</span></strong>, <strong><span class="" style="color: rgb(239, 69, 64);">điều kiện học tập sinh hoạt</span></strong>, <strong><span class="" style="color: rgb(239, 69, 64);">các điều kiện thực hành thực tập</span></strong>. Trên tinh thần trách nhiệm và quyền lợi của người học, rất mong nhận được nhiều ý kiến đóng góp để Nhà trường phục vụ các em ngày một tốt hơn.</p><p dir="ltr" style="text-align: left;">Trân trọng những nhận xét và góp ý của các em! P. ĐBCL&amp;KT.</p><p dir="ltr" style="text-align: left;"><br></p></div></div></div></div></div></div></li><li class="activity feedback modtype_feedback  " id="module-10281998"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/feedback/view.php?id=10281998"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/feedback/1674784913/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">HỘP THƯ NHẬN XÉT, GÓP Ý VỀ ĐIỀU KIỆN HỌC TẬP VÀ SINH HOẠT<span class="accesshide " > Feedback</span></span></a></div></div></div></div></li><li class="activity feedback modtype_feedback  " id="module-10281999"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/feedback/view.php?id=10281999"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/feedback/1674784913/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">HỘP THƯ NHẬN XÉT, GÓP Ý VỀ HOẠT ĐỘNG THÍ NGHIỆM THỰC HÀNH<span class="accesshide " > Feedback</span></span></a></div></div></div></div></li><li class="activity label modtype_label  " id="module-10223393"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="contentwithoutlink "><div class="no-overflow"><div class="no-overflow"><p dir="ltr" style="text-align: center;"><img src="https://elearning.ntu.edu.vn/pluginfile.php/574742/mod_label/intro/image%20%283%29.png"><br></p></div></div></div></div></div></div></li><li class="activity resource modtype_resource  " id="module-10281189"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://elearning.ntu.edu.vn/mod/resource/view.php?id=10281189"><img src="https://elearning.ntu.edu.vn/theme/image.php/academi/core/1674784913/f/archive-24" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Tài liệu hướng dẫn sử dụng phần mềm kiểm tra đạo văn Turnitin tại đây<span class="accesshide " > File</span></span></a></div><div class="contentafterlink"><div class="no-overflow"><div class="no-overflow"><p dir="ltr" style="text-align: left;">Xem hướng dẫn từ website SĐH <a href="https://pdtsaudaihoc.ntu.edu.vn/Hoc-vien-cao-hoc/Huong-dan">tại đây</a></p></div></div></div></div></div></div></li></ul></div><br /></div>    </div>
+    <aside id="block-region-side-pre" class="col-md-3 block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip Liên kết đến</a>
+
+<section id="inst35"
+     class=" block_html block  card mb-3"
+     role="complementary"
+     data-block="html"
+          aria-labelledby="instance-35-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-35-header" class="card-title d-inline">Liên kết đến</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><ul>
+    <li><a target="_blank" href="http://ntu.edu.vn">Trường Đại học Nha Trang</a></li>
+    <li><a target="_blank" href="http://thuvien.ntu.edu.vn">Thư viện</a></li>
+    <li><a target="_blank" href="http://tuyensinh.ntu.edu.vn">Tuyển sinh</a></li>
+    <li><a target="_blank" href="http://e-learning.hcmut.edu.vn/course/index.php?categoryid=136">Hướng dẫn sử dụng của ĐHBK</a><br></li>
+    <li><a target="_blank" href="https://coursera.org/">Khóa học mở Coursera</a></li>
+    <li><a target="_blank" href="https://edx.org/">Khóa học mở Edx</a></li><li><a href="https://elearning.ntu.edu.vn/course/view.php?id=16677">TĐG cấp&nbsp;Nhà Trường</a></li><li><a href="https://elearning.ntu.edu.vn/course/view.php?id=9770">TĐG cấp CTĐT</a></li><li><a href="https://elearning.ntu.edu.vn/course/view.php?id=10127#section-5">Tổ hỗ trợ xây dựng học liệu số</a></li></ul></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span><a href="#sb-2" class="sr-only sr-only-focusable">Skip Calendar</a>
+
+<section id="inst3"
+     class=" block_calendar_month block  card mb-3"
+     role="complementary"
+     data-block="calendar_month"
+          aria-labelledby="instance-3-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-3-header" class="card-title d-inline">Calendar</h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="calendar-month-2023-2-63e995407ed1f63e995407ed211"  data-template="core_calendar/month_mini"  data-includenavigation="false" data-mini="true">
+    <div id="month-mini-2023-2-63e995407ed1f63e995407ed211" class="calendarwrapper" data-courseid="1" data-categoryid="0" data-month="2" data-year="2023" data-day="13" data-view="month">
+        <span class="overlay-icon-container hidden" data-region="overlay-icon-container">
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" role="img" aria-label="Loading"></i></span>
+        </span>
+        <table class="minicalendar calendartable">
+            <caption class="calendar-controls">
+                    <h3>
+                        <a href="https://elearning.ntu.edu.vn/calendar/view.php?view=month&time=1676252480" title="This month">February 2023</a>
+                    </h3>
+            </caption>
+            <thead>
+              <tr>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Monday</span>
+                        <span aria-hidden="true">Mon</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Tuesday</span>
+                        <span aria-hidden="true">Tue</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Wednesday</span>
+                        <span aria-hidden="true">Wed</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Thursday</span>
+                        <span aria-hidden="true">Thu</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Friday</span>
+                        <span aria-hidden="true">Fri</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Saturday</span>
+                        <span aria-hidden="true">Sat</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Sunday</span>
+                        <span aria-hidden="true">Sun</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-region="month-view-week">
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="day text-center" data-day-timestamp="1675184400"><span class="sr-only">No events, Wednesday, 1 February</span>
+
+                                <span aria-hidden="true">1</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1675270800"><span class="sr-only">No events, Thursday, 2 February</span>
+
+                                <span aria-hidden="true">2</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1675357200"><span class="sr-only">No events, Friday, 3 February</span>
+
+                                <span aria-hidden="true">3</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1675443600"><span class="sr-only">No events, Saturday, 4 February</span>
+
+                                <span aria-hidden="true">4</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1675530000"><span class="sr-only">No events, Sunday, 5 February</span>
+
+                                <span aria-hidden="true">5</span>
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center" data-day-timestamp="1675616400"><span class="sr-only">No events, Monday, 6 February</span>
+
+                                <span aria-hidden="true">6</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1675702800"><span class="sr-only">No events, Tuesday, 7 February</span>
+
+                                <span aria-hidden="true">7</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1675789200"><span class="sr-only">No events, Wednesday, 8 February</span>
+
+                                <span aria-hidden="true">8</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1675875600"><span class="sr-only">No events, Thursday, 9 February</span>
+
+                                <span aria-hidden="true">9</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1675962000"><span class="sr-only">No events, Friday, 10 February</span>
+
+                                <span aria-hidden="true">10</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1676048400"><span class="sr-only">No events, Saturday, 11 February</span>
+
+                                <span aria-hidden="true">11</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1676134800"><span class="sr-only">No events, Sunday, 12 February</span>
+
+                                <span aria-hidden="true">12</span>
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center today" data-day-timestamp="1676221200"><span class="sr-only">No events, Monday, 13 February</span>
+                                    <a  id="calendar-day-popover-link-1-2023-43-63e995407ed1f63e995407ed211" href="https://elearning.ntu.edu.vn/calendar/view.php?view=day&amp;time=1676221200" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2023" data-month="2" data-courseid="1" data-categoryid="0" data-title="Today Monday, 13 February" data-alternate="No events" aria-label="Today Monday, 13 February">13</a>
+    <div class="hidden">
+        
+    </div>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1676307600"><span class="sr-only">No events, Tuesday, 14 February</span>
+
+                                <span aria-hidden="true">14</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1676394000"><span class="sr-only">No events, Wednesday, 15 February</span>
+
+                                <span aria-hidden="true">15</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1676480400"><span class="sr-only">No events, Thursday, 16 February</span>
+
+                                <span aria-hidden="true">16</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1676566800"><span class="sr-only">No events, Friday, 17 February</span>
+
+                                <span aria-hidden="true">17</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1676653200"><span class="sr-only">No events, Saturday, 18 February</span>
+
+                                <span aria-hidden="true">18</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1676739600"><span class="sr-only">No events, Sunday, 19 February</span>
+
+                                <span aria-hidden="true">19</span>
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center" data-day-timestamp="1676826000"><span class="sr-only">No events, Monday, 20 February</span>
+
+                                <span aria-hidden="true">20</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1676912400"><span class="sr-only">No events, Tuesday, 21 February</span>
+
+                                <span aria-hidden="true">21</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1676998800"><span class="sr-only">No events, Wednesday, 22 February</span>
+
+                                <span aria-hidden="true">22</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1677085200"><span class="sr-only">No events, Thursday, 23 February</span>
+
+                                <span aria-hidden="true">23</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1677171600"><span class="sr-only">No events, Friday, 24 February</span>
+
+                                <span aria-hidden="true">24</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1677258000"><span class="sr-only">No events, Saturday, 25 February</span>
+
+                                <span aria-hidden="true">25</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1677344400"><span class="sr-only">No events, Sunday, 26 February</span>
+
+                                <span aria-hidden="true">26</span>
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center" data-day-timestamp="1677430800"><span class="sr-only">No events, Monday, 27 February</span>
+
+                                <span aria-hidden="true">27</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1677517200"><span class="sr-only">No events, Tuesday, 28 February</span>
+
+                                <span aria-hidden="true">28</span>
+                            </td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span></aside>    </div>
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+    <nav class="list-group" aria-label="">
+        <ul>
+                <li>
+                    <a class="list-group-item list-group-item-action active active_tree_node " href="https://elearning.ntu.edu.vn/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="ml-0">
+                            <div class="media">
+                                    <span class="media-left">
+                                        <i class="icon fa fa-home fa-fw " aria-hidden="true"  ></i>
+                                    </span>
+                                <span class="media-body font-weight-bold">Home</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+</div></div>
+<footer id="page-footer" class="py-3 bg-dark text-light">
+<div id="footer">
+    <div class="footer-main">
+    <div class="container">
+    <div id="course-footer"></div>
+        <div class="row">
+
+        <div class="col-md-5">
+            <div class="infoarea">
+            <div class="footer-logo">
+                <a href="#"><img src="//elearning.ntu.edu.vn/pluginfile.php/1/theme_academi/logo/1674784913/eLogo4.png" width="100" height="100" alt="Academi"></a>
+            </div>
+            
+                <p>Trải qua hơn 60 năm xây dựng và phát triển, Trường Đại học Nha Trang đã trở thành một trong những cơ sở đào tạo đa ngành, đa lĩnh vực quy mô lớn; là cơ sở nghiên cứu chủ đạo, triển khai ứng dụng công nghệ tiên tiến, đặc biệt trong lĩnh vực thủy sản phục vụ phát triển kinh tế xã hội khu vực Nam Trung Bộ, Tây Nguyên và phạm vi cả nước.<br><a href="http://ntu.edu.vn" target="_blank">Đọc thêm&nbsp;»</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="foot-links">
+            <h2>Info</h2>
+             <ul>
+                <li><a href="http://ntu.edu.vn" target="_blank">Trường Đại học Nha Trang</a></li><li><a href="http://thuvien.ntu.edu.vn" target="_blank">Thư viện</a></li><li><a href="http://tuyensinh.ntu.edu.vn" target="_blank">Tuyển sinh</a></li><li><a href="https://www.coursera.org/" target="_blank">Khóa học mở Coursera</a></li><li><a href="https://www.edx.org/" target="_blank">Khóa học mở Edx</a></li>
+             </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info">
+            <h2 class="nopadding">Contact us</h2>
+
+             <p>02 Nguyen Dinh Chieu, Nha Trang, Khanh Hoa<br>
+              <i class="fa fa-phone-square"></i> Phone : 0258 2461303<br>
+              <i class="fa fa-envelope"></i> E-mail : <a class="mail-link" href="mailto:tocntt@ntu.edu.vn">tocntt@ntu.edu.vn</a><br>
+            </p>
+
+          </div>
+          <div class="social-media">
+            <h6>Follow us</h6>
+            <ul>
+                <li class="smedia-01"><a href="https://www.facebook.com/nhatranguniversity"><i class="fa fa-facebook-square"></i></a></li>
+               <li class="smedia-02"><a href="https://www.facebook.com/tuyensinhdhnt"><i class="fa fa-pinterest-square"></i></a></li>
+                <li class="smedia-03"><a href="https://www.facebook.com/dtn.dhnt"><i class="fa fa-twitter-square"></i></a></li>
+                <li class="smedia-04"><a href="https://www.facebook.com/hsvdhnhatrang"><i class="fa fa-google-plus-square"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="footer-bootom">
+        <p>Developed by <a href="http://fit.ntu.edu.vn">Khoa Công nghệ Thông tin Trường Đại học Nha Trang</a>. Powered by <a href="https://moodle.org">Moodle</a></p>
+    </div>
+
+    <!-- <nav class="nav navbar-nav d-md-none">
+            <ul class="list-unstyled pt-3">
+                                <li><a href="https://elearning.ntu.edu.vn" title="">Trang chủ</a></li>
+                                <li><a href="https://elearning.ntu.edu.vn/course" title="">Khóa học</a></li>
+                                <li><a href="https://elearning.ntu.edu.vn/my" title="">Trang cá nhân</a></li>
+                                <li><a href="https://elearning.ntu.edu.vn/course/view.php?id=1204" title="">Hướng dẫn</a></li>
+                                <li><a href="#" title="Language">English ‎(en)‎</a></li>
+                            <li>
+                                <ul class="list-unstyled ml-3">
+                                                    <li><a href="https://elearning.ntu.edu.vn/?lang=en" title="Language">English ‎(en)‎</a></li>
+                                                    <li><a href="https://elearning.ntu.edu.vn/?lang=vi" title="Language">Vietnamese ‎(vi)‎</a></li>
+                                </ul>
+                            </li>
+            </ul>
+    </nav> -->
+  </div>
+
+  </footer>
+<!--E.O.Footer-->
+
+<footer>
+<div class="tool_dataprivacy"><a href="https://elearning.ntu.edu.vn/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2021051712.01&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
+</footer>
+<script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://elearning.ntu.edu.vn/lib/requirejs.php/1674784913/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/lib/jquery/jquery-3.5.1.min',
+        jqueryui: 'https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2023-43-63e995407ed1f63e995407ed211");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require([
+    'jquery',
+    'core_calendar/selectors',
+    'core_calendar/events',
+], function(
+    $,
+    CalendarSelectors,
+    CalendarEvents
+) {
+
+    $('body').on(CalendarEvents.filterChanged, function(e, data) {
+        M.util.js_pending("month-mini-63e995407ed1f63e995407ed211-filterChanged");
+        // A filter value has been changed.
+        // Find all matching cells in the popover data, and hide them.
+        $("#month-mini-2023-2-63e995407ed1f63e995407ed211")
+            .find(CalendarSelectors.popoverType[data.type])
+            .toggleClass('hidden', !!data.hidden);
+        M.util.js_complete("month-mini-63e995407ed1f63e995407ed211-filterChanged");
+    });
+});
+;
+
+require(['jquery', 'core_calendar/calendar_mini'], function($, CalendarMini) {
+    CalendarMini.init($("#calendar-month-2023-2-63e995407ed1f63e995407ed211"), !1);
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select63e995407ed214', [CustomEvents.events.accessibleChange]);
+    $('#single_select63e995407ed214').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f63e995407ed213').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select63e995407ed217', [CustomEvents.events.accessibleChange]);
+    $('#single_select63e995407ed217').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f63e995407ed216').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select63e995407ed2110', [CustomEvents.events.accessibleChange]);
+    $('#single_select63e995407ed2110').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f63e995407ed219').submit();
+        }
+    });
+});
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://elearning.ntu.edu.vn/lib/javascript.php/1674784913/theme/academi/javascript/theme.js"></script>
+<script src="https://elearning.ntu.edu.vn/theme/javascript.php/academi/1674784913/footer"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random63e995407ed2111'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63e995407ed2111'); });
+})();
+//]]>
+</script>
+</body>
+</html>
