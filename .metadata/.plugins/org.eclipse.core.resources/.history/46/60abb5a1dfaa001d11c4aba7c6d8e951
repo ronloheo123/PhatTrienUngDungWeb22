@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="PhamNgocTruongWeb2">
-        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
-        <property name="context-root" value="PhamNgocTruongWeb2"/>
-        <property name="java-output-path" value="/PhamNgocTruongWeb2/build/classes"/>
-    </wb-module>
-</project-modules>
