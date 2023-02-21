@@ -31,6 +31,7 @@ public class BMI extends HttpServlet {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html");
+		response.setCharacterEncoding("UTF-8");
 	    PrintWriter out = response.getWriter();
 	    out.println("<html><head><title>Tính chỉ số BMI</title></head><body>");
 	    out.println("<h1>Tính chỉ số BMI</h1>");

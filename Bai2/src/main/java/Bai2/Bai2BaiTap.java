@@ -31,7 +31,7 @@ public class Bai2BaiTap extends HttpServlet {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html");
-		response.setCharacterEncoding("utf-8");
+		response.setCharacterEncoding("UTF8");
 		PrintWriter traVe =response.getWriter();
 		traVe.append("Bạn vừa gửi yêu vầu dạng GET, đây là đáp ứng của tôi");
 		String noidungHTML="<form method = POST action=\"/Bai2/Bai2BaiTap\">"
@@ -51,7 +51,7 @@ public class Bai2BaiTap extends HttpServlet {
 //		// TODO Auto-generated method stub
 //		doGet(request, response);
 		response.setContentType("text/html");
-		response.setCharacterEncoding("utf-8");
+		response.setCharacterEncoding("UTF8");
 		String value1=request.getParameter("fname");
 		String value2=request.getParameter("lname");
 		PrintWriter traVe=response.getWriter();
